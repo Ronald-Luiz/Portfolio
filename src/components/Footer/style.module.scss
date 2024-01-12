@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.Footer {
+    position: absolute;
+    bottom: auto;
+    width: 100%;
+    // height: 275px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+    box-shadow: 3rem 4rem 10rem;
+
+
+
+    // border:2px solid red;
+    // border: 2px solid transparent;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 20px;
+        // height: 100px;
+
+        .Text {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .icons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            li {
+                margin: 3px;
+            }
+
+            li:hover {
+                transform: scale(110%);
+                transition: 1s;
+                cursor: pointer;
+            }
+        }
+    }
+
+    li {
+        font-weight: bold;
+        list-style-type: none;
+        color: #fffdd0;
+        font-family: 'Courgette', cursive;
+    }
+
+
+    @media screen and (max-width:700px) {
+        margin-top: 0px;
+        height: 165px;
+    }
+
+    @media screen and (min-width:900px) {
+
+
+        margin-top: 0px;
+    }
+
+}

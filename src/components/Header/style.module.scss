@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: black;
+
+    position: relative;
+    z-index: 100;
+
+
+    opacity: 0.7;
+
+    @media screen and (max-width:700px) {
+        height: 90px;
+    }
+
+}
+
+
+// .divMobile {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 15vw;
+//     color: #292929;
+//     right: 0;
+//     z-index: 0;
+//     position: absolute;
+// }
+
+
+
+
+
+//Buttons
+button {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    margin: 1em;
+    padding: 0.25em 1em;
+    border-radius: 10px;
+    border: 2px solid gray;
+    border-radius: 7px;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(110%);
+    transition: 1s;
+    color: white;
+    background-color: #140d28;
+}
+
+.redBracket {
+    color: red;
+    // Outras propriedades de estilo, se necessário
+  }
+
+
+// .mobileButton {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 40px;
+//     flex-direction: column;
+//     margin-right: 30px;
+//     background-color: black;
+//     border-radius: 4px;
+
+//     .line1 {
+//         width: 30px;
+//         height: 5px;
+//         background-color: #fff;
+//         border-radius: 5px;
+//         margin: 3px;
+//     }
+
+//     .line2 {
+//         width: 30px;
+//         height: 5px;
+//         background-color: #fff;
+//         border-radius: 3px;
+//         margin: 3px;
+//     }
+
+//     .line3 {
+//         width: 30px;
+//         height: 5px;
+//         background-color: #fff;
+//         border-radius: 5px;
+//         margin: 3px;
+//     }
+// }
+
+.mobileButton:hover {
+    transition: 1s;
+}
+
+// .ChangeColor {
+//     margin-left: 10px;
+// }
+
+
+
+
+//Menu
+
+.Menus {
+
+    margin-left: 25px;
+    margin-right: 25px;
+    background-color: white;
+    // background-color: #292929;
+
+
+
+}
+
+
+.Menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: black;
+    // background-color: #F0F8FF;
+
+    width: 95vw;
+
+    align-items: center;
+    height: 7vw;
+
+
+
+    ul {
+        display: flex;
+    }
+
+    li {
+        font-size: 20px;
+        list-style: none;
+        padding: 12px;
+        margin-right: 20px;
+    }
+
+    li:hover {
+        transform: scale(110%);
+        transition: 1s;
+
+    }
+
+    a {
+        font-family: 'Hedvig Letters Serif', serif;
+        text-decoration: none;
+        color: white;
+    }
+
+    a:hover {
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: white;
+    }
+
+    h3 {
+        display: flex;
+        color: white;
+        font-family: 'Permanent Marker', cursive;
+
+        p {
+            margin-left: 10px;
+            color: red;
+        }
+    }
+
+}
+
+
+.menuMobile {
+    // margin-top: 500px;
+    // background-color: black;
+    // height: 600px;
+    // width: 200px;
+    // opacity: 0.7;
+
+    @media screen and (min-width:700px) {
+        display: none;
+    }
+}
+
+//     ul {
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         list-style-type: none;
+
+//         margin-top: 25px;
+
+//         a {
+//             text-decoration: none;
+//             color: white;
+//         }
+
+//         a:hover {
+//             color: red;
+//         }
+
+//     }
+
+//     li {
+//         padding: 10px;
+//         border-bottom: 1px solid #ddd;
+//         color: #292929;
+//     }
+
+//     li:hover {
+//         // color: green;
+//         cursor: pointer;
+//     }
+
+//     li:last-child {
+//         border-bottom: none;
+//     }
+
+// }
+
+// .menuMobile:hover {
+//     opacity: 10;
+//     transition: all 2s ease;
+
+//     opacity: 10;
+// }
+
+
+
+//Responsividade
+@media screen and (max-width:700px) {
+    .Menus {
+        height: 15vw;
+    }
+
+    button {
+        font-size: 3vw;
+    }
+
+    .Menu {
+        display: none;
+    }
+}
+
+
+// @media screen and (min-width:700px) {
+//     .menuMobile {
+//         display: none;
+//     }
+
+//     .mobileButton {
+//         display: none;
+//     }
+// }

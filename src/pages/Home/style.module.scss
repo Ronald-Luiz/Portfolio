@@ -1,0 +1,268 @@
+// @import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@300&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+main {
+    // position: relative;
+    // bottom: 4.0vw;
+
+    // bottom:7;
+    // height: 610px;
+    // background-color: black;
+    // height: 900px;
+
+    color: white;
+    // border: 2px solid red;
+
+    // @media screen and (max-width:700px) {
+    //     height: 628px;
+    // }
+
+    // @media screen and (max-width:900px) {
+    //     height: 777px;
+    // }
+}
+
+
+.capa {
+    // position: relative;
+    // bottom: 7vw;
+    width: 100%;
+    height: 800px;
+
+    // height: 115vw;
+    // height: 680px;
+    overflow: hidden;
+    opacity: 0.8;
+    filter: blur(1px);
+
+
+    @media screen and (max-width:700px) {
+        // position: relative;
+        // bottom: 16vw;
+        height: 700px;
+    }
+
+    @media screen and (max-width:700px) {
+        // display: absolute;
+        // bottom: 95px;
+        // top: 0;
+    }
+}
+
+.Imgperfil {
+    width: 180px;
+    border-radius: 200px;
+
+    border: 2px solid white;
+}
+
+.caixaPai {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+
+
+    // height:680px;
+    // height: 830px;
+
+    //      
+    // @media screen and (max-width:700px) {
+
+    //     height: 500px;
+
+    //     .capa {
+    //         height: 820px;
+    //     }
+    // }
+
+    // @media screen and (max-width:900px) {
+
+    //     height: 500px;
+
+    //     .capa {
+    //         height: 850px;
+    //     }
+    // }
+
+
+    // @media screen and (min-width:1000px) {
+
+    //     .capa {
+    //         height: 710px;
+    //     }
+    // }
+
+}
+
+
+.caixaFilho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    // top: 16vw;
+    // width: 90vw;
+
+    @keyframes piscar {
+        0% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: 0.5;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .aboutMore {
+        background-color: white;
+        font-weight: bold;
+        animation: piscar 1s infinite;
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: white;
+        }
+    }
+
+    .aboutMore:hover {
+        background-color: black;
+        color: white;
+    }
+
+}
+
+
+
+
+.section1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 380px;
+
+    button {
+        display: flex;
+        align-items: center;
+        opacity: 0.8;
+        color: white;
+        border-radius: 5px;
+        background-color: black;
+    }
+
+    button:hover {
+        cursor: pointer;
+        transform: scale(110%);
+        transition: 1s;
+        color: black;
+        background-color: white;
+        border: 2px solid black;
+    }
+
+    .buttonsPerfil {
+        margin-bottom: 25px;
+        display: flex;
+
+        a{
+            text-decoration: none;
+        }
+    }
+
+
+    @media screen and (max-width:700px) {
+        margin-top: 20px;
+    }
+
+}
+
+
+figure {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+
+    figcaption {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+            // font-family: 'Playpen Sans', cursive;
+            font-family: 'Roboto', sans-serif;
+            font-size: 17px;
+            font-weight: bold;
+            width: 32vw;
+
+        }
+
+        h1 {
+            font-family: 'Roboto', sans-serif;
+
+            font-size: 4vw;
+
+            color: black;
+
+            text-shadow: 8px 8px 8px;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: white;
+        }
+
+        h2 {
+            // font-family: 'Playpen Sans', cursive;
+            font-family: 'Roboto', sans-serif;
+            font-size: 3vw;
+
+            margin-top: 25px;
+        }
+
+    }
+}
+
+
+@media screen and (max-width:700px) {
+    figure {
+        display: flex;
+        flex-direction: column;
+
+        figcaption {
+            p {
+                font-size: 17px;
+                width: 72vw;
+            }
+
+            h1 {
+                font-size: 6vw;
+            }
+
+            h2 {
+                font-size: 5vw;
+            }
+
+        }
+    }
+
+    .section1 {
+        height: 240px;
+    }
+
+}
