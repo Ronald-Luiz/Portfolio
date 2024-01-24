@@ -1,8 +1,10 @@
+
+
 import ParticlesBackground from '../../components/ParticlesBackground';
 
 //importing routes
-import { Link } from 'react-router-dom';
-import React, { useRef } from 'react';
+// import { Link } from 'react-router-dom';
+import React, { useRef, useState, useEffect } from 'react';
 
 //importing images !
 import Fundo from '../../assets/background.png';
@@ -18,17 +20,18 @@ import styles from '../Home/style.module.scss';
 import About from '../About';
 
 function main() {
-
     const sobreRef = useRef();
-
     const Curriculum = '/src/assets/Curriculo.pdf'
 
     return (
         <>
-    <ParticlesBackground />
+            <ParticlesBackground />
 
 
             <main>
+
+
+
                 <div className={styles.caixaPai}>
                     <img className={styles.capa} src={Fundo} alt="" />
                     <div className={styles.caixaFilho}>
